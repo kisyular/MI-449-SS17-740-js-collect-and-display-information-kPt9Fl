@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="utf-8">
-    <title>Dating Profile</title>
+    <title>Profile</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" rel="stylesheet">
     <style>
       /* Wrap code blocks instead of overflowing */
@@ -18,7 +18,7 @@
   <body>
     <div class="container">
 
-      <h1>Dating profile generator</h1>
+      <h1>Profile generator</h1>
 
       <p class="tagline">
         Create your own dating profile, that you fully own! Simply enter your personal information below and the HTML for your profile will start writing itself automatically.
@@ -41,7 +41,7 @@
 
       <h2>Contact</h2>
       <div class="row ">
-        <div class="six columns ">
+        <div class="six columns">
           <label>Email</label>
           <input id="email" onkeyup="emailAddress()" type="email" class="u-full-width ">
         </div>
@@ -51,11 +51,6 @@
         </div>
       </div>
 
-    </div>
-
-    <hr>
-
-    <div class="container ">
       <div class="row ">
         <div class="six columns ">
           <h2>Preview</h2>
@@ -65,18 +60,20 @@
             <p>
               If you're interested in a date, you can email me at
               <a id="emailOut" href="mailto:EMAIL_ADDRESS " target="_blank "></a> or give me a call at
-              <a id="phoneOut" href="tel:PHONE_NUMBER " target="_blank "></a>.
+              <a id="phoneOut" href="tel:PHONE_NUMBER " target="_blank "></a>
             </p>
           </div>
         </div>
         <div class="six columns ">
           <h2>Generated HTML</h2>
-          <pre><code>
-            THIS IS WHERE THE RAW HTML SHOULD APPEAR
-          </code></pre>
+          <pre id="preCode"><code>
+              THIS IS WHERE THE RAW HTML SHOULD APPEAR
+            </code></pre>
         </div>
       </div>
+
     </div>
+
   </body>
 
 </html>
