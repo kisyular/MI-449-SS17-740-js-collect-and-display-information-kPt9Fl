@@ -12,68 +12,51 @@
         white-space: pre-wrap;
       }
     </style>
-    <script src="js/script.js"></script>
   </head>
 
   <body>
     <div class="container">
-
       <h1>Profile generator</h1>
-
-      <p class="tagline">
-        Create your own dating profile, that you fully own! Simply enter your personal information below and the HTML for your profile will start writing itself automatically.
-      </p>
-
+      <p class="tagline"> Create your own dating profile, that you fully own! Simply enter your personal information below and the HTML for your profile will start writing itself automatically. </p>
       <h2>Personal</h2>
-
       <div class="row">
         <div class="six columns">
           <label>First name</label>
-          <input id="first" onkeyup="firstName()" type="text " class="u-full-width ">
-        </div>
-        <div class="six columns ">
+          <input id="first" onkeyup="firstName()" type="text" class="u-full-width"> </div>
+        <div class="six columns">
           <label>Last name</label>
-          <input id="last" onkeyup="lastName()" type="text " class="u-full-width ">
-        </div>
+          <input id="last" onkeyup="lastName()" type="text" class="u-full-width"> </div>
       </div>
       <label>Briefly describe yourself</label>
-      <textarea id="bio" class="u-full-width " onkeyup="bio()"></textarea>
-
+      <textarea id="bio" class="u-full-width"></textarea>
       <h2>Contact</h2>
-      <div class="row ">
+      <div class="row">
         <div class="six columns">
           <label>Email</label>
-          <input id="email" onkeyup="emailAddress()" type="email" class="u-full-width ">
-        </div>
-        <div class="six columns ">
+          <input id="email" onkeyup="emailAddress()" type="email" class="u-full-width"> </div>
+        <div class="six columns">
           <label>Phone</label>
-          <input id="phone" onkeyup="phoneNumber()" type="tel" class="u-full-width ">
-        </div>
+          <input id="phone" onkeyup="phoneNumber()" type="tel" class="u-full-width"> </div>
       </div>
-
-      <div class="row ">
-        <div class="six columns ">
+      <div class="row">
+        <div class="six columns">
           <h2>Preview</h2>
           <div>
             <h4>Hi, my name is <span id="spanFirst"> </span> <span id="spanLast"></span> </h4>
             <p id="describeYourself"></p>
-            <p>
-              If you're interested in a date, you can email me at
-              <a id="emailOut" href="mailto:EMAIL_ADDRESS " target="_blank "></a> or give me a call at
-              <a id="phoneOut" href="tel:PHONE_NUMBER " target="_blank "></a>
+            <p> If you're interested in a date, you can email me at
+              <a id="emailOut" href="mailto:EMAIL_ADDRESS" target="_blank "></a> or give me a call at
+              <a id="phoneOut" href="tel:PHONE_NUMBER" target="_blank"></a>
             </p>
           </div>
         </div>
         <div class="six columns ">
-          <h2>Generated HTML</h2>
-          <pre id="preCode"><code>
+          <h2>Generated HTML</h2> <pre id="preCode"><code>
               THIS IS WHERE THE RAW HTML SHOULD APPEAR
-            </code></pre>
-        </div>
+            </code></pre> </div>
       </div>
-
     </div>
-
+    <script src="js/script.js"></script>
   </body>
 
 </html>
