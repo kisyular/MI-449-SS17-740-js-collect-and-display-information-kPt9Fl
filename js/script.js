@@ -26,6 +26,7 @@ document.getElementById('email').addEventListener('keyup', addressEmail)
 function addressEmail() {
   var x = document.getElementById('email').value
   document.getElementById('emailOut').innerHTML = x
+  document.getElementById('emailOut').href = 'mailto:' + x;
   updateProfile()
 }
 
@@ -34,6 +35,7 @@ document.getElementById('phone').addEventListener('keyup', numberPhone)
 function numberPhone() {
   var x = document.getElementById('phone').value
   document.getElementById('phoneOut').innerHTML = x
+  document.getElementById('phoneOut').href = 'tel:' + x;
   updateProfile()
 }
 
@@ -45,5 +47,5 @@ function updateProfile() {
   var phone = document.getElementById('phone').value
 
   var profile = firstName + ' ' + lastName + ' ' + bioGraph + ' ' + email + ' ' + phone
-  document.getElementById('preCode').innerHTML = profile
+  document.getElementById('preCode').textContent = profile
 }
